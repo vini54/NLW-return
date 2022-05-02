@@ -1,0 +1,52 @@
+.wrapper {
+  @apply min-h-screen w-full flex flex-col gap-8 bg-[#09090A]
+}
+
+header {
+  @apply py-3 px-5 bg-surface20
+}
+
+.header {
+  @apply max-w-6xl m-auto flex justify-between items-center gap-2 gap-y-8 flex-wrap
+}
+
+.header--brand {
+  @apply w-16 h-8 bg-surface20Hover rounded-lg order-1 sm:w-40 md:order-none
+}
+
+.header--nav {
+  @apply sm:flex gap-2 items-center w-full hidden md:w-auto
+}
+
+.nav--box {
+  @apply w-20 h-4 bg-surface20Hover rounded-lg
+}
+
+.header--profile {
+  @apply flex gap-2 items-center order-2 md:order-none
+}
+
+.profile--box {
+  @apply w-10 h-6 bg-surface20Hover rounded-xl
+}
+
+.profile--avatar {
+  @apply w-8 h-8 bg-surface20Hover rounded-2xl
+}
+
+main {
+  @apply w-full px-5 
+}
+
+.main {
+  @apply w-full max-w-6xl mx-auto mb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8
+}
+
+.main--horizontal {
+  @apply w-full bg-surface20 p-6 py-8 rounded-2xl text-text20 flex justify-center items-center col-span-full
+}
+
+.main--box {
+  @apply bg-surface20 rounded-2xl;
+  aspect-ratio: 1;
+}
