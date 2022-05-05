@@ -1,0 +1,53 @@
+.wrapper {
+  width: calc(100vw - 4rem);
+  @apply sm:w-auto mb-4 bg-surface10 p-3 px-4 rounded-lg flex flex-col gap-4
+}
+
+.head {
+  @apply min-h-[24px] flex justify-center items-center relative
+}
+
+.head > h3 {
+  @apply flex items-center gap-1 mx-4
+}
+
+.head > h3 img {
+  @apply w-6
+}
+
+.head button svg {
+  @apply text-text20
+}
+
+.headBack {
+  @apply absolute left-0 top-1
+}
+
+.headClose {
+  @apply absolute right-0 top-1
+}
+
+.head h3 {
+  @apply text-text10 font-medium text-xl
+}
+
+.cards {
+  @apply grid grid-cols-3 gap-2
+}
+
+.cardsCard {
+  @apply 
+  w-auto sm:w-28 h-32 bg-surface20 
+  flex flex-col justify-center items-center gap-2 
+  rounded-lg text-text10 transition ease-linear
+  border-brandHover border-collapse hover:border-2
+  focus:border-2 focus:outline-none;
+}
+
+.credits {
+  @apply w-full flex justify-center text-text20 text-xs
+}
+
+.credits a {
+  @apply underline underline-offset-2
+}

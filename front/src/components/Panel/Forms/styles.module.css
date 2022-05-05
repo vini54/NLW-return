@@ -1,0 +1,41 @@
+.wrapper {
+  @apply w-full sm:w-[352px] flex flex-col gap-4
+}
+
+.wrapper > textarea {
+  @apply border-2 p-2 border-text20 rounded resize-none text-sm outline-none focus:border-brand text-text10;
+  background: none;
+}
+
+.wrapper > textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.wrapper > textarea::-webkit-scrollbar-track {
+  width: 8px;
+  background: rgb(24 24 27); 
+}
+
+.wrapper > textarea::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border: 2px solid rgb(24 24 27);
+}
+
+.actions {
+  @apply flex gap-2 items-center
+}
+
+.actionsCamera {
+  @apply bg-surface20 w-9 h-9 flex justify-center items-center rounded-lg outline-none focus:border-brandHover focus:border-2
+}
+
+.actionsSubmit {
+  @apply flex-grow h-9 bg-brand rounded-md flex justify-center items-center text-text10 font-medium transition-opacity ease-linear duration-300 disabled:opacity-50
+}
+
+.actionsTrash {
+  @apply p-1 w-9 h-9 flex justify-end items-end rounded-lg outline-none focus:ring-brandHover focus:ring-2 text-text20 hover:text-text10;
+  background-position: center;
+  background-size: contain;
+}

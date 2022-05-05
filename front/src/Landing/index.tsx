@@ -1,40 +1,40 @@
 import { Widget } from "components/Widget";
-import "./styles.css";
+import styles from "./styles.module.css";
 
 export const Landing = () => {
   return (
-    <div className="wrapper">
+    <div className={styles.wrapper}>
       <header>
-        <div className="header">
-          <div className="header--brand" />
+        <div className={styles.header}>
+          <div className={styles.headerBrand} />
 
-          <ul className="header--nav">
-            <li className="nav--box" />
-            <li className="nav--box" />
-            <li className="nav--box" />
-            <li className="nav--box" />
+          <ul className={styles.headerNav}>
+            <li className={styles.navBox} />
+            <li className={styles.navBox} />
+            <li className={styles.navBox} />
+            <li className={styles.navBox} />
           </ul>
 
-          <div className="header--profile">
-            <div className="profile--box" />
-            <div className="profile--box" />
+          <div className={styles.headerProfile}>
+            <div className={styles.profileBox} />
+            <div className={styles.profileBox} />
 
-            <div className="profile--avatar" />
+            <div className={styles.profileAvatar} />
           </div>
         </div>
       </header>
 
       <main>
-        <div className="main">
-          <div className="main--horizontal">
+        <div className={styles.main}>
+          <div className={styles.mainHorizontal}>
             <p>Experimente enviar um feedback de um bug na aplicação 🐛</p>
           </div>
 
-          <div className="main--box" />
-          <div className="main--box" />
-          <div className="main--box" />
-          <div className="main--box" />
-          <div className="main--box" />
+          <div className={styles.mainBox} />
+          <div className={styles.mainBox} />
+          <div className={styles.mainBox} />
+          <div className={styles.mainBox} />
+          <div className={styles.mainBox} />
         </div>
       </main>
 

@@ -1,0 +1,15 @@
+.wrapper {
+  @apply w-full md:w-[352px] flex flex-col items-center px-4 text-text10
+}
+
+.wrapper > img {
+  @apply w-12
+}
+
+.wrapper > h3 {
+  @apply text-xl font-semibold
+}
+
+.wrapper > button {
+  @apply mt-4 bg-surface20 p-2 px-4 rounded-lg text-sm
+}
