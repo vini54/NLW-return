@@ -9,7 +9,7 @@ import { useState } from "react";
 import { WidgetForm } from "./Forms";
 import { Sucess } from "./Sucess";
 
-const feedbackTypes = {
+export const feedbackTypes = {
   Bug: {
     title: "Problema",
     image: BugImage,
@@ -74,7 +74,10 @@ export const Panel = () => {
       ) : feedBackSent ? (
         <Sucess setFeedBack={setFeedBack} setFeedBackSent={setFeedBackSent} />
       ) : (
-        <WidgetForm setFeedBackSent={setFeedBackSent} />
+        <WidgetForm
+          setFeedBackSent={setFeedBackSent}
+          feedBackType={feedBackType}
+        />
       )}
 
       <div className={styles.credits}>
