@@ -40,6 +40,7 @@ export class SubmitFeedbackService {
         `<div>`,
         `<p>Tipo de Feedback: ${type}</p>`,
         `<p>Comentário: ${comment}</p>`,
+        screenshot ? `<img src=${screenshot} />` : null,
         `</div>`,
       ].join("\n"),
     });
